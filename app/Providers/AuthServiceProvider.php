@@ -88,13 +88,13 @@ class AuthServiceProvider extends ServiceProvider
 
         Gate::define('users-create',function ($user){
 
-            return $user->checkAccessDev();
+            return $user->checkAccessAdmin();
         });
 
 
         Gate::define('users-store',function ($user){
 
-            return $user->checkAccessDev();
+            return $user->checkAccessAdmin();
         });
 
         Gate::define('users-edit',function ($user){
